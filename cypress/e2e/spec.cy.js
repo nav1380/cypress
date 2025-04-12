@@ -14,22 +14,7 @@ describe('Test Case 16 - Place Order: Login before Checkout', () => {
     cy.contains('Account Created!')
     cy.get('[data-qa="continue-button"]').click()
     cy.verifyName(customer)
-  })
-
-  it ('should scroll to the bottom', () => {
-    cy.visit('https://automationexercise.com');
-    cy.scrollTo('bottom');
-    cy.scrollTo('top')
-    cy.contains('practice').should('be.visible')
-  })
-
-  
-  it ('should scroll to the bottom', () => {
-    cy.visit('https://automationexercise.com');
-    cy.scrollTo('bottom');
-    cy.scrollTo('top')
-    cy.contains('practice').should('be.visible')
-  })
+  });
 
   it ('should scroll to the bottom', () => {
     cy.visit('https://automationexercise.com');
