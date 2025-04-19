@@ -46,6 +46,6 @@ jobs:
       - name: Run Cypress E2E Test 
         run: npm run specz
         env:
-          CYPRESS_RECORD_KEY: 475ddd54-56dc-4935-8c28-a61ab1d9db6f
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
