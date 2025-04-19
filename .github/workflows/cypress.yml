@@ -1,3 +1,5 @@
+
+
 name: Cypress Tests
 
 on:
@@ -14,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+
+      
       # Step 1: Checkout the repository
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,6 +46,6 @@ jobs:
       - name: Run Cypress E2E Test 
         run: npm run specz
         env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_RECORD_KEY: 475ddd54-56dc-4935-8c28-a61ab1d9db6f
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
+        
